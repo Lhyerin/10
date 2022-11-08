@@ -1,18 +1,14 @@
-#include <iostream>
 #include <stdio.h>
 #include <string.h>
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(void) {
-	FILE* fp =NULL;
-	char c;
+	char src[]="The worst things to eat before you sleep";
+	char dst[100];
 	
-	fp=fopen("sample.txt","r");
+	strcpy(dst,src);
 	
-	while((c=fgetc(fp))!=EOF)
-	    putchar(c);
-	
-	fclose(fp);
+	printf("copied string: %s",dst);
     return 0;
 }
 
