@@ -1,17 +1,12 @@
 #include <iostream>
-
+#include <stdio.h>
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char** argv) {
-	FILE* fp=NULL;
+int main(void) {
+	char code1='A';
+	int code2=65;
 	
-	fp=fopen("simple2.txt","w");
-	
-	fputc('a',fp);
-	fputc('b',fp);
-	fputc('c',fp);
-	
-	fclose(fp);
-	return 0;
+	printf("code1=%c,(%d)\n",code1,code1);
+	printf("code2=%c,(%d)\n",code2,code2);
 }
 
